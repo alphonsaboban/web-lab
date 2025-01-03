@@ -1,0 +1,79 @@
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Complete HTML Form</title>
+</head>
+<body>
+
+    <h1>Complete HTML Form</h1>
+    
+    <form action="/submit" method="POST">
+
+        <!-- Text Input -->
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required placeholder="Enter your name"><br><br>
+
+        <!-- Email Input -->
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required placeholder="Enter your email"><br><br>
+
+        <!-- Password Input -->
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required placeholder="Enter a password"><br><br>
+
+        <!-- Radio Buttons -->
+        <label for="gender">Gender:</label><br>
+        <input type="radio" id="male" name="gender" value="male" required>
+        <label for="male">Male</label><br>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Female</label><br>
+        <input type="radio" id="other" name="gender" value="other">
+        <label for="other">Other</label><br><br>
+
+        <!-- Checkbox -->
+        <label for="subscribe">Subscribe to newsletter:</label>
+        <input type="checkbox" id="subscribe" name="subscribe" value="yes"><br><br>
+
+        <!-- Select Dropdown -->
+        <label for="country">Country:</label>
+        <select id="country" name="country">
+            <option value="usa">United States</option>
+            <option value="canada">Canada</option>
+            <option value="uk">United Kingdom</option>
+            <option value="india">India</option>
+        </select><br><br>
+
+        <!-- Textarea -->
+        <label for="message">Message:</label><br>
+        <textarea id="message" name="message" rows="4" cols="50" placeholder="Enter your message"></textarea><br><br>
+
+        <!-- File Input -->
+        <label for="file">Upload a file:</label>
+        <input type="file" id="file" name="file"><br><br>
+
+        <!-- Date Input -->
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob"><br><br>
+
+        <!-- Time Input -->
+        <label for="appointment">Preferred Appointment Time:</label>
+        <input type="time" id="appointment" name="appointment"><br><br>
+
+        <!-- Range Input -->
+        <label for="age">Age:</label>
+        <input type="range" id="age" name="age" min="18" max="100" value="30"><br><br>
+
+        <!-- Number Input -->
+        <label for="quantity">Quantity:</label>
+        <input type="number" id="quantity" name="quantity" min="1" max="100" value="1"><br><br>
+
+        <!-- Submit Button -->
+        <input type="submit" value="Submit">
+    
+    </form>
+
+</body>
+</html>
+
